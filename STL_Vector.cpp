@@ -50,8 +50,8 @@ int main(){
    
     //for-each loop
     for(int x: tmp) cout<<x<<" "; cout<<endl; //x will take the value of the vector tmp and print it
-    for(auto x: tmp) x*=2; //auto will automatically take the type of the vector tmp and print it
-    
+    for(auto x: tmp) x*=2; /// for each can't modify only print
+    for(auto x: tmp) cout<<x<<" "; cout<<endl;  //auto will automatically take the type of the vector tmp and print it
 
     vector <int> E = {3 , 2 , 5 , 1 , 4};
     sort(E.begin(),E.end());  //complexity O(nlog2n)
@@ -64,7 +64,7 @@ int main(){
     E.pop_back(); //delete the last element  //complexity O(1)
     cout<<E.back()<<endl; //print the last element
     cout<<E.front()<<endl; //print the first element
-    cout<<*E.begin()+2<<endl; //print the 3rd element
+    cout<<*(E.begin()+2)<<endl; //print the 3rd element
     E.erase(E.begin()); //erase the first element you have to pass the address of the element or pointer //complexity O(n)
     cout<<E.front()<<endl; //print the first element
    

@@ -1,31 +1,24 @@
-#include<stdio.h>
-#include<math.h>
-#include<stdlib.h>
-
-const int mx=2*10e4+23;
-const int chmx=5*10e4+7;
-int x[mx];
-int y[mx];
-int exist[mx];
-char s[chmx];
+#include<bits/stdc++.h>
+using namespace std;
 int main(){
-
-  //  freopen("input.txt" , "r" , stdin);
-   // freopen("output.o" , "w" , stdout);
-
-   int n;
-   scanf("%d",&n);
- 
-    for(int i=0; i<n; i++){
-        int a,b;
-        scanf("%d%d",&a,&b);
-       if(a<b){
-        int t=a;
-        a=b;
-        b=t;
-       }
-       printf("%d\n",a+1);
-    }
-    return 0;
+	freopen("input.txt" , "r" , stdin);
+  freopen("output.o" , "w" , stdout);
+  vector<vector<int>> v;
+  vector<int> a = {1,2,3,4};
+  vector<int> b = {6,4,9,5,3,5};
+  v.push_back(a);
+  v.push_back(b);
+  for(auto x : v){
+    for(auto y : x){
+      cout<<y<<" ";
+    }cout<<endl;
+  }
+vector<int>::iterator it = max_element(a.begin(),a.end());
+cout<<*it<<endl;
+cout<<*(max_element(b.begin(),b.end()))<<endl;
+sort(b.begin(),b.end());
+int sz = unique(b.begin(),b.end()) - b.begin();
+cout<<sz<<endl;
+for(int i=0; i<sz; i++)cout<<b[i]<<" "; cout<<endl;
+return 0;
 }
-
