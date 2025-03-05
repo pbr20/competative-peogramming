@@ -5,28 +5,24 @@ using namespace std;
     #define endl '\n'                               //cmnt out after semicolon if u want interactive output (one by one)
     int main(){
     optimize();
-    freopen("input.txt", "r" , stdin);
-    freopen("output.o" , "w" , stdout);
-    int t;
-	cin>>t;
-	while(t){
-        int n,c=0,f=0;
-        cin>>n;
-        vector<int> v(n);
-        for(int i=0; i<n; i++)cin>>v[i];
-        for(int i=n-2; i>=0; i--){
-            while(v[i]>=v[i+1] &&v[i]>0){
-                v[i]/=2;
+    //freopen("input.txt", "r" , stdin);
+    //freopen("output.o" , "w" , stdout);
+    int t,c=0;
+    cin>>t;
+    vector<int> box(t);
+    map<int,int> m1;
+    for(int i=0; i<t; i++){cin>>box[i]; m1[box[i]]++;}
+    sort(box.begin(),box.end());
+    for(int i=0; i<t-1; i++){
+        for(int j=i+1; j<t; j++){
+            if(box[i]<box[j] && m1[box[j]]>0){
                 c++;
-            }
-            if(v[i]<i-1){
-                cout<<-1<<endl;
-                f=1;
+                m1[box[i]]--;
+                m1[box[j]]--;
                 break;
             }
-        }if(f==0)
-        cout<<c<<endl;
-        t--;
+        }
     }
+    cout<<t-c<<endl;
     return 0;
 }

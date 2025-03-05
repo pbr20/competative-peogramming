@@ -15,7 +15,7 @@ using namespace std;
     gender["Anastasia"] = "Female";
     gender["Rithen"] = "Male";
     cout<<gender["Anastasia"]<<endl;
-    cout<<gender["No_one"]<<endl; //if the map is not assigned any value then it will print empty and in case int typr it will be zero
+    cout<<gender["No_one"]<<endl; //if the map is not assigned any value then it will print empty and in case int type it will be zero
     //frequency array with map u can count long long and negative too
     map<long long,int>cnt;
     vector<long long> num = {6213721812,-82, 82443298, 6213721812, 6213721812,-82, 82443298, 6213721812,-82};
