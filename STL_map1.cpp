@@ -7,7 +7,7 @@ using namespace std;
     optimize();
     freopen("input.txt" , "r" , stdin);
     freopen("output.o" , "w" , stdout);
-    map<string,int> id; //ttime complexicity log2N
+    map<string,int> id; //time complexicity log2N
     id["Anastasia"] = 19;
     id["Rithen"] = 21;
     cout<<id["Anastasia"]<<endl;

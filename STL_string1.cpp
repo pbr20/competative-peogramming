@@ -5,8 +5,8 @@ using namespace std;
 int main()
 {   
     optimize();
-    freopen("input.txt", "r", stdin);
-    freopen("output.o", "w", stdout);
+   // freopen("input.txt", "r", stdin);
+   // freopen("output.o", "w", stdout);
     string s = {"Rithen"};
     s += " Barua";
     cout << s << endl;
@@ -38,14 +38,14 @@ int main()
     string b2;
     int t;
     cin>>t;
-    while(t){
+    while(t--){
         char c;
         cin>>c;
         string b3;
         getline(cin , b3);
         b2 = c+b3;
         cout<<b2<<endl;
-        t--;
+       
     }
     //sort
     string d1= {"ahjftenAAA"};
@@ -58,7 +58,7 @@ int main()
     d1.erase(d1.begin()+1);
     cout<<d1<<endl;
     //to erase a specific character
-    d1.erase(remove(d1.begin() , d1.end() , 'f'),d1.end());
+    d1.erase(remove(d1.begin() , d1.end() , 't'),d1.end());
     cout<<d1<<endl;
     //string comparison
     string e1="Rithen";

@@ -46,7 +46,7 @@ using namespace std;
     //to print desending order
     set<int , greater<int>> res= {1,2,4,3,2,1,2,3,2,4,2,1,2,1,3,2};
     for(auto u : res)cout<<u<<" "; cout<<endl;
-    //random order TC - O(1) thats why u may neeedto use this to reduce from log2N but number will be in random order
+    //random order TC - O(1) thats why u may needto use this to reduce from log2N but number will be in random order
     unordered_set<int> s9 = {1,2,4,3,2,1,2,3,2,4,2,1,2,1,3,2};
     for(auto u : s9) cout<<u<<" "; cout<<endl;
     return 0;

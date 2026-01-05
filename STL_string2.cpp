@@ -5,8 +5,8 @@ using namespace std;
     #define endl '\n'                               //cmnt out after semicolon if u want interactive output (one by one)
     int main(){
     optimize();
-    freopen("input.txt" , "r" , stdin);
-    freopen("output.o" , "w" ,stdout);
+    //freopen("input.txt" , "r" , stdin);
+    //freopen("output.o" , "w" ,stdout);
         string a1 = "Fisch";
         a1.pop_back();
         cout<<a1.back()<<endl;
@@ -42,7 +42,7 @@ using namespace std;
         //for string u have to use loop//
         //->to erase a substring from a string<-//
         string d1 = "Rithen Barua Anastasia";
-        d1.erase(d1.begin()+8 , d1.begin()+14); //for erase add one more index to the end point
+        d1.erase(d1.begin()+7 , d1.begin()+13); //for erase add one more index to the end point
         cout<<d1<<endl;
         string d2 = "Nik & ";
         string d3 = "Rithen Barua";
@@ -62,6 +62,8 @@ using namespace std;
         f1 = "dcba";
         f12 = next_permutation(f1.begin() ,f1.end());
         cout<<f12<<" "<<f1<<endl;  //will return 0 since there is no greater laxigraphical string exist and will convert this too smallest laxigraphical string
-        
+        //////think permutation like number/////
+        //////0123 → 0132 → 0213 → ... → 3210////
+
         return 0;
 }
