@@ -5,8 +5,8 @@ using namespace std;
     #define endl '\n'                               //cmnt out after semicolon if u want interactive output (one by one)
     int main(){
     optimize();
-    //freopen("input.txt" , "r" , stdin);
-    //freopen("output.o" , "w" ,stdout);
+    freopen("input.txt" , "r" , stdin);
+    freopen("output.o" , "w" ,stdout);
         string a1 = "Fisch";
         a1.pop_back();
         cout<<a1.back()<<endl;

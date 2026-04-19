@@ -5,8 +5,8 @@ using namespace std;
 int main()
 {   
     optimize();
-   // freopen("input.txt", "r", stdin);
-   // freopen("output.o", "w", stdout);
+    freopen("input.txt", "r", stdin);
+    freopen("output.o", "w", stdout);
     string s = {"Rithen"};
     s += " Barua";
     cout << s << endl;

@@ -49,8 +49,8 @@ int x = 1000100;
 
 int main(){
    optimize();
-	//freopen("input.txt" , "r" , stdin);
-  //freopen("output.o" , "w" , stdout);
+	freopen("input.txt" , "r" , stdin);
+  freopen("output.o" , "w" , stdout);
   
   long long int a , b,c,d;
   cin>>a>>b;

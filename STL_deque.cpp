@@ -21,6 +21,7 @@ using namespace std;
         cout<<dq.front()<<" "<<dq.back()<<endl;
         dq.pop_front();
         dq.pop_back();
+        
     }
 
     return 0;

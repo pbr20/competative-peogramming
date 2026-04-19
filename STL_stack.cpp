@@ -20,6 +20,7 @@ using namespace std;
     while(!st.empty()){
         cout<<st.top()<<" ";
         st.pop();
+        
     }
 
     return 0;

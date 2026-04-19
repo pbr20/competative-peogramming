@@ -49,5 +49,28 @@ using namespace std;
     //random order TC - O(1) thats why u may needto use this to reduce from log2N but number will be in random order
     unordered_set<int> s9 = {1,2,4,3,2,1,2,3,2,4,2,1,2,1,3,2};
     for(auto u : s9) cout<<u<<" "; cout<<endl;
+
+    set<int> s123 = {1,2,3};
+    set<int> s124 = {10,11};
+    s123.swap(s124);
+
+    cout<<"------s123-------"<<endl;
+    for(auto x: s123) cout<<x<<" "; cout<<endl;
+
+    cout<<"------s124-------"<<endl;
+    for(auto x: s124) cout<<x<<" "; cout<<endl;
+    
+    set<int> sa1 = {2, 4, 6, 8};
+    auto itr = sa1.lower_bound(6); //returns an iterator to the first element that is greater than or equal to
+    cout<<*itr<<endl;
+
+    auto itr1 = sa1.upper_bound(6); //returns an iterator to the first element that is not less than the given value
+    cout<<*itr1<<endl;
+
+    auto itr2 = sa1.equal_range(6);//equal_range(x) = { lower_bound(x), upper_bound(x) }
+
+    cout<<*itr2.first<<" "<<*itr2.second<<endl;
+
+    
     return 0;
 }
